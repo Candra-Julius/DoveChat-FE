@@ -6,7 +6,7 @@ import styles from '../styles/login.module.css'
 import axios from 'axios'
 import { io } from 'socket.io-client'
 
-const Login = ({setSocket, setIsLoggedIn}) => {
+const Login = ({setSocket}) => {
   const router = useRouter()
   const [login, setLogin] = useState({
     email:'',
@@ -16,7 +16,6 @@ const Login = ({setSocket, setIsLoggedIn}) => {
     const {data: result} = await axios.post(`${process.env.NEXT_API}/login`, formData)
     const data = result.data
     localStorage.setItem('token', data.token)
-    setIsLoggedIn(localStorage.getItem('token'))
     const resSocket = io(process.env.NEXT_API, {
       query:{
         token: data.token
@@ -36,7 +35,6 @@ const Login = ({setSocket, setIsLoggedIn}) => {
         formData.append('email', login.email)
         formData.append('password', login.password)
         fetchLogin(formData)
-        
         router.push('/')
     }
   return (

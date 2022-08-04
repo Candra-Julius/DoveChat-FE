@@ -152,7 +152,7 @@ export default function Home({socket,setSocket}) {
     </div>
     </div>
     {friend.map((data)=>(
-      <ChatList name={data.fullname} href={data.user_id} />
+      <ChatList name={data.fullname} img={data.avatar} href={data.user_id} />
     ))}
       
     </div>

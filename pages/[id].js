@@ -57,7 +57,7 @@ const ChatBox = ({socket, data, id}) => {
     <ConversationBar/>
     <div className={styles.sect2}>
     <div className={styles.reciver}>
-    <Image alt='' src={dummy} width='65px' height='65px' />
+    <Image alt='' src={data.avatar} width='65px' height='65px' />
     <div className={styles.status} >
     <h4>{data.fullname}</h4>
     <p>online</p>

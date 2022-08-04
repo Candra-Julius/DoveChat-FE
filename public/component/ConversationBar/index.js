@@ -83,14 +83,14 @@ export default function Home({socket,setSocket}) {
       [e.target.name]: e.target.value
     })
   }
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault()
     const formData = new FormData();
     formData.append('fullname', update.fullname || mySelf.fullname)
     formData.append('username', update.username || mySelf.usersname)
     formData.append('description', update.description || mySelf.description)
     formData.append('avatar', selectedFile)
-    insertData(formData)
+    await insertData(formData)
     router.reload()
   }
   const handleLogout = (e) => {

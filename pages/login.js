@@ -6,7 +6,7 @@ import styles from '../styles/login.module.css'
 import axios from 'axios'
 import { io } from 'socket.io-client'
 
-const Login = ({setSocket}) => {
+const Login = ({setSocket, setIsLoggedIn}) => {
   const router = useRouter()
   const [login, setLogin] = useState({
     email:'',
@@ -35,6 +35,7 @@ const Login = ({setSocket}) => {
         formData.append('email', login.email)
         formData.append('password', login.password)
         fetchLogin(formData)
+        setIsLoggedIn(localStorage.getItem('token'))
         router.push('/')
     }
   return (

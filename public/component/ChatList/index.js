@@ -9,7 +9,7 @@ import { useState } from 'react'
 const ChatList = ({href, img, name, previewe}) => {
   return (
     <div className={styles.container} key={href}>
-    <Image src={img} width='68px' height='68px' layout='fixed' alt='profileImage' />
+    <Image src={img === null? dummy : img} width='68px' height='68px' layout='fixed' alt='profileImage' />
     <Link href={`/${href}`}>
     <div className={styles.text}>
     <h3>{name}</h3>

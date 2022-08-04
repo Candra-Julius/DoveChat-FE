@@ -16,7 +16,7 @@ const Login = ({setSocket, setIsLoggedIn}) => {
     const {data: result} = await axios.post(`${process.env.NEXT_API}/login`, formData)
     const data = result.data
     localStorage.setItem('token', data.token)
-    setIsLoggedIn(localStorage.getItem('token'))
+    // setIsLoggedIn(localStorage.getItem('token'))
     localStorage.setItem('refreshToken', data.refreshToken)
     const resSocket = io(process.env.NEXT_API, {
       query:{

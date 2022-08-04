@@ -1,0 +1,74 @@
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    margin:0;
+    background-color: #EEEEEE;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    width: 35%;
+    height:80%;
+    box-shadow: 0px 0px 10px 5px rgba(126, 152, 223, 0.5);
+    border-radius: 30px;
+    animation-name: slidein;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes slidein{
+    0%{
+        opacity: 0;
+        transform: scale(0%);
+    }
+    80%{
+        transform: scale(110%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+.colBlack{
+    color: blue;
+}
+.colRed{
+    color: red;
+}
+.main h1{
+    position: absolute;
+    color:#7E98DF
+}
+.welcomeText{
+    color:#7E98DF;
+    margin-top: 12px;
+    margin-bottom:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcomeText p {
+    color: #2e2e2e;
+    align-self:flex-start ;
+}
+.form button{
+    width: 100%;
+    padding:12.5px;
+    background-color: #7E98DF;
+    color: #EEEEEE;
+    border-radius: 35px;
+    border: none;
+    transition: 200ms;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form button:hover{
+    transform: translateY(-4px);
+}
+.form button:active{
+    background-color: #5EB4DD;
+}

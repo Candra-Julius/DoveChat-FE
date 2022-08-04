@@ -1,0 +1,22 @@
+.input{
+    display:flex;
+    flex-direction: column;
+}
+.input label{
+    color: #848484;
+    /* margin-top: 10px; */
+}
+.input input{
+    background-color: #EEEEEE;
+    margin-top:0px;
+    height: 35px;
+    outline: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: 400ms;
+    margin-bottom: 10px;
+}
+.input input:focus{
+    border-color: #7E98DF;
+}

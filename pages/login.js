@@ -38,7 +38,6 @@ const Login = ({setSocket, setIsLoggedIn}) => {
         formData.append('password', login.password)
         fetchLogin(formData)
         router.push('/')
-        router.reload()
     }
   return (
     <div className={styles.container}>

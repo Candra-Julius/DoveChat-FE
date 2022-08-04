@@ -1,11 +1,14 @@
+import { useRouter } from "next/router"
 import Login from "../../../../pages/login"
 
 const withAuth = (Component) => {
     const Auth = (props) =>{
+        const router = useRouter()
         const {isLoggedIn} = props
         if(!isLoggedIn){
             return (
-                <Login/>
+                router.push('/login')
+                // <Login/>
             )
         }
         return(

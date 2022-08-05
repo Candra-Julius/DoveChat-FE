@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Input from '../public/component/input'
 import styles from '../styles/login.module.css'
 import axios from 'axios'
@@ -25,6 +25,12 @@ const Login = ({setSocket, setIsLoggedIn}) => {
     })
         setSocket(resSocket)
   }
+  useEffect(()=>{
+  if(window.location.pathname !== '/login'){
+    router.push('/login')
+  }
+  }, [])
+
   const handleChange = (e)=>{
     setLogin({
       ...login,
@@ -37,7 +43,8 @@ const Login = ({setSocket, setIsLoggedIn}) => {
         formData.append('email', login.email)
         formData.append('password', login.password)
         fetchLogin(formData)
-        router.push('/')
+        setIsLoggedIn(localStorage.getItem('token'))
+          router.push('/loading')
     }
   return (
     <div className={styles.container}>

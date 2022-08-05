@@ -5,6 +5,7 @@ import styles from '../styles/index.module.css'
 import withAuth from '../public/component/HOC/withAuth/withAuth'
 
 const Index = () => {
+  const router = useRouter()
   // const router = useRouter()
   // useEffect(()=>{
   //   if (typeof window !== 'undefined') {

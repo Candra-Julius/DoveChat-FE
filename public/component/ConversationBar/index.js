@@ -91,7 +91,7 @@ export default function Home({socket,setSocket}) {
     formData.append('description', update.description || mySelf.description)
     formData.append('avatar', selectedFile)
     await insertData(formData)
-    router.reload()
+    router.push('/loading')
   }
   const handleLogout = (e) => {
     e.preventDefault()

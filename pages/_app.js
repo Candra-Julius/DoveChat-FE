@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps }) {
   const [socket, setSocket] = useState(null)
   const [isLoggedIn, setIsLoggedIn] = useState('')
 
-  // useEffect(()=>{
-  //       setIsLoggedIn(localStorage.getItem('token'))
-  // }, [])
+  useEffect(()=>{
+        setIsLoggedIn(localStorage.getItem('token'))
+  }, [])
 
   useEffect(()=>{
     const token = localStorage.getItem('token')

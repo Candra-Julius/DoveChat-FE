@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 const Loading = ({isLoggedIn}) => {
     const router = useRouter()
     useEffect(()=>{
-        console.log(localStorage.getItem('token'));
+        console.log(isLoggedIn);
         if(!localStorage.getItem('token')){
             setTimeout(()=>{router.reload()},3000)
             

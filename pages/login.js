@@ -28,6 +28,8 @@ const Login = ({setSocket, setIsLoggedIn}) => {
   useEffect(()=>{
   if(window.location.pathname !== '/login'){
     router.push('/login')
+  }else if(localStorage.getItem('token')){
+    router.push('/loading')
   }
   }, [])
 
@@ -43,7 +45,7 @@ const Login = ({setSocket, setIsLoggedIn}) => {
         formData.append('email', login.email)
         formData.append('password', login.password)
         fetchLogin(formData)
-        setIsLoggedIn(localStorage.getItem('token'))
+        // setIsLoggedIn(localStorage.getItem('token'))
           router.push('/loading')
     }
   return (

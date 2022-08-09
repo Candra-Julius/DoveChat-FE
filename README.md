@@ -54,8 +54,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Create a Node.js app for building Hire Job RESTful APIs using Express.
-DoveChat is a simple web chating that allow users to send message privately to other users
+DoveChat is a another portfolio project from PijarCamp, a simple web chating that allow users to send message privately to other users. This website waas ccreated using PERN Stack.
 
 ### Built With
 This app was built with some technologies below:
@@ -123,17 +122,6 @@ Contributions are what make the open source community such an amazing place to b
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Related Project
-:rocket: [`Backend DoveChat`](https://github.com/Candra-Julius/DoveChat-BE)
-
-:rocket: [`Frontend DoveChat`](https://github.com/Candra-Julius/DoveChat-FE)
-
-:rocket: [`Web Service`](https://dove-chat.herokuapp.com/)
-
-:rocket: [`Demo DoveChat`](https://dove-chat-fe.vercel.app/login)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Screenshoots
 
 <p align="center" display=flex>
@@ -159,6 +147,17 @@ Contributions are what make the open source community such an amazing place to b
 </table>
       
 </p>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Related Project
+:rocket: [`Backend DoveChat`](https://github.com/Candra-Julius/DoveChat-BE)
+
+:rocket: [`Frontend DoveChat`](https://github.com/Candra-Julius/DoveChat-FE)
+
+:rocket: [`Web Service`](https://dove-chat.herokuapp.com/)
+
+:rocket: [`Demo DoveChat`](https://dove-chat-fe.vercel.app/login)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License

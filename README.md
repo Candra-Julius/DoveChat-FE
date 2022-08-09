@@ -54,7 +54,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-DoveChat is a another portfolio project from PijarCamp, a simple web chating that allow users to send message privately to other users. This website waas ccreated using PERN Stack.
+DoveChat is a another portfolio project from PijarCamp, a simple web chating that allow users to send message privately to other users. This website was created using PERN Stack.
 
 ### Built With
 This app was built with some technologies below:
